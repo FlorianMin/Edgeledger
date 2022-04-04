@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Post One</title>
+</head>
+
+<body id="home">
+  <header class="hero blog">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>Blog</h1>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="post">
+      <h2>Blog Post One</h2>
+      <p class="meta">
+        <i class="fas fa-user"> Posted by <strong>Paul Macovei</strong> | April 19 2021</i>
+      </p>
+      <img src="images/blog/blog1.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad debitis aliquam temporibus nihil, dicta a
+        voluptates minus aperiam, accusantium, repellendus facilis dolor. Vitae quibusdam doloribus reiciendis nihil,
+        eum itaque commodi.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus culpa aliquam mollitia necessitatibus
+        quisquam qui modi impedit, distinctio neque quibusdam perferendis minima, odio doloremque eum rerum. Nam laborum
+        amet voluptatem esse est excepturi vitae rerum quis itaque laboriosam ab adipisci, saepe dolores illum error.
+        Quia tenetur molestias nobis atque neque, voluptatibus corporis repudiandae unde quaerat eligendi expedita in
+        eveniet adipisci!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dicta, facere nostrum dolor ullam magni ab
+        voluptate incidunt blanditiis vero veritatis sapiente nam dolorum magnam nihil esse voluptatibus vel earum
+        voluptas sint. Laudantium aut iure cumque quidem magnam earum voluptates fugiat recusandae quos dignissimos
+        numquam vitae repudiandae dicta, at doloremque optio eos. Quae dolorem nihil iste vitae hic ipsam nobis
+        nesciunt, similique consectetur odio voluptatem vel culpa aliquid sunt sequi cumque unde amet corporis
+        architecto suscipit commodi? Hic omnis quos vel molestias illo repellat magnam ipsam labore vitae quibusdam
+        tempora quod facere voluptate, explicabo rerum rem nihil corporis ipsa commodi. Fugit, voluptatum sint. Nostrum
+        laborum sunt nobis id cumque! Ea unde doloribus maxime impedit esse necessitatibus ipsum voluptate adipisci illo
+        dignissimos, neque earum voluptas nesciunt laborum possimus exercitationem nisi vel dolor! Reiciendis architecto
+        quibusdam quasi, perspiciatis officiis voluptates corporis rerum alias at fugit exercitationem delectus expedita
+        aspernatur perferendis, beatae, ut eos eius iure reprehenderit nisi repellat quos magnam adipisci. Optio
+        laudantium, consectetur assumenda odio animi nihil alias reiciendis laborum voluptatem nam ab cupiditate
+        doloribus quae beatae impedit accusamus exercitationem esse sunt corporis repudiandae quis ratione placeat
+        molestias. Itaque, omnis, voluptatem expedita culpa commodi at, obcaecati aut veritatis molestias magni ullam.
+      </p>
+    </section>
+  </main>
+
+
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2022 - EdgeLedger</p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+  </script>
+</body>
+
+</html>
